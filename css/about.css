@@ -140,3 +140,7 @@ ul.facts__list-items>li {
     font-size: 14px;
     font-weight: 500;
 }
+
+.map__wrapper {
+    padding-bottom: 100px;
+}
