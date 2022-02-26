@@ -28,7 +28,7 @@
 }
 
 .recipe-detail__heading::before {
-    content: "For Begginers";
+    content: "Recipe Detail";
     position: absolute;
     top: -50px;
     left: 0;
