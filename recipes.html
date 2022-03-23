@@ -1,498 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes List - Food Blog</title>
 
     <!-- Primary Meta Tags -->
     <title>Recipes List - Food Blog | Minh Hung Le</title>
-    <meta name="title" content="Recipes List - Food Blog | Minh Hung Le">
-    <meta name="description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
+    <meta name="title" content="Recipes List - Food Blog | Minh Hung Le" />
+    <meta
+      name="description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://food-blog-do-an.vercel.app/recipes.html">
-    <meta property="og:title" content="Recipes List - Food Blog | Minh Hung Le">
-    <meta property="og:description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
-    <meta property="og:image" content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://food-blog-do-an.vercel.app/recipes.html"
+    />
+    <meta
+      property="og:title"
+      content="Recipes List - Food Blog | Minh Hung Le"
+    />
+    <meta
+      property="og:description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
+    <meta
+      property="og:image"
+      content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://food-blog-do-an.vercel.app/recipes.html">
-    <meta property="twitter:title" content="Recipes List - Food Blog | Minh Hung Le">
-    <meta property="twitter:description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
-    <meta property="twitter:image" content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://food-blog-do-an.vercel.app/recipes.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Recipes List - Food Blog | Minh Hung Le"
+    />
+    <meta
+      property="twitter:description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
+    <meta
+      property="twitter:image"
+      content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg"
+    />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/c79a8ca9fc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c79a8ca9fc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- AOS Animate Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS Stylesheets  -->
-    <link rel="stylesheet" href="css/grid/container.css">
-    <link rel="stylesheet" href="css/grid/row.css">
-    <link rel="stylesheet" href="css/grid/col.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/grid/container.css" />
+    <link rel="stylesheet" href="css/grid/row.css" />
+    <link rel="stylesheet" href="css/grid/col.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/recipes.css" />
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <!-- Header section start -->
     <header>
-        <!-- Top-bar section start -->
-        <section class="top-bar" id="topBarId">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="top-bar__social-list">
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="top-bar__links">
-                            <a href="#">Register</a>
-                            <span>/</span>
-                            <a href="#">Login</a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Top-bar section start -->
+      <section class="top-bar" id="topBarId">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="top-bar__social-list">
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <!-- Top-bar section end -->
-
-        <!-- Navigation section start -->
-        <nav class="top-nav" id="navBarId">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-md-2 col-lg-2">
-                        <a href="index.html" class="top-nav___link-logo">
-                            <img class="top-nav__logo" src="./images/logo.webp" alt="">
-                        </a>
-                    </div>
-
-                    <div class="col-lg-8 col-md-9">
-                        <ul class="top-nav__menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="#">Recipes</a></li>
-                            <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-2 col-md-1 col-lg-2">
-                        <div class="top-nav__search">
-                            <button>
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="top-nav__toggle" id="showMenu">
-                            <div class="top-nav__toggle-bars">
-                                <div class="top-nav__toggle-bar" id="barTop"></div>
-                                <div class="top-nav__toggle-bar" id="hideBar"></div>
-                                <div class="top-nav__toggle-bar" id="barBottom"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <ul class="top-nav__menu-toggle" id="navLinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="recipes.html">Recipes</a></li>
-                        <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+              <div class="top-bar__links">
+                <a href="#">Register</a>
+                <span>/</span>
+                <a href="#">Login</a>
+              </div>
             </div>
-        </nav>
-        <!-- Navigation section end -->
+          </div>
+        </div>
+      </section>
+      <!-- Top-bar section end -->
+
+      <!-- Navigation section start -->
+      <nav class="top-nav" id="navBarId">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-md-2 col-lg-2">
+              <a href="index.html" class="top-nav___link-logo">
+                <img class="top-nav__logo" src="./images/logo.webp" alt="" />
+              </a>
+            </div>
+
+            <div class="col-lg-8 col-md-9">
+              <ul class="top-nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Recipes</a></li>
+                <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2 col-md-1 col-lg-2">
+              <div class="top-nav__search">
+                <button>
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="top-nav__toggle" id="showMenu">
+                <div class="top-nav__toggle-bars">
+                  <div class="top-nav__toggle-bar" id="barTop"></div>
+                  <div class="top-nav__toggle-bar" id="hideBar"></div>
+                  <div class="top-nav__toggle-bar" id="barBottom"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="top-nav__menu-toggle" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="recipes.html">Recipes</a></li>
+              <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation section end -->
     </header>
     <!-- Header section end -->
 
     <main>
-        <!-- Hero section start -->
-        <section class="hero">
-            <h1 class="hero__title">Recipes</h1>
-        </section>
-        <!-- Hero section end -->
+      <!-- Hero section start -->
+      <section class="hero">
+        <h1 class="hero__title">Recipes</h1>
+      </section>
+      <!-- Hero section end -->
 
-        <!-- Recipes list section start -->
-        <section class="recipes-list">
-            <div class="container">
-                <div class="recipes-list__heading">
-                    <h2 class="recipes-list__title">Latest recipes</h2>
+      <!-- Recipes list section start -->
+      <section class="recipes-list">
+        <div class="container">
+          <div class="recipes-list__heading">
+            <h2 class="recipes-list__title">Latest recipes</h2>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/1.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Traditional Pizza</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="100">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/1.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Traditional Pizza</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="200">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/2.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Italian home-made pasta</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="300">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/3.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Chesse Cake Tart</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="100">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/4.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Traditional Pizza</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="200">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/5.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Italian home-made pasta</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="300">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/6.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Chesse Cake Tart</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="100">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/7.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Traditional Pizza</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="200">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/8.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Italian home-made pasta</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="300">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/9.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Chesse Cake Tart</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="100">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/10.jpg" alt="" /></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Traditional Pizza</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="200">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/11.jpg" alt="" </a>>
-                                <div class="recipes-list__info-background">
-                                    <div class="recipes-list__info">
-                                        <h3>Italian home-made pasta</h3>
-                                        <div class="recipes-list__rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="300">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/12.jpg" alt="" </a>>
-                                <div class="recipes-list__info-background">
-                                    <div class="recipes-list__info">
-                                        <h3>Chesse Cake Tart</h3>
-                                        <div class="recipes-list__rating">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="100">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/7.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Traditional Pizza</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="200">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/8.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Italian home-made pasta</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out"
-                        data-aos-delay="300">
-                        <div class="recipes-list__item">
-                            <a href="recipe-detail.html"><img src="images/recipes/9.jpg" alt=""></a>
-                            <div class="recipes-list__info-background">
-                                <div class="recipes-list__info">
-                                    <h3>Chesse Cake Tart</h3>
-                                    <div class="recipes-list__rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recipes-list__pagination">
-                    <span>01</span>
-                    <a href="#">02</a>
-                    <a href="#">03</a>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- Contact section end -->
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/2.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Italian home-made pasta</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/3.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Chesse Cake Tart</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/4.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Traditional Pizza</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/5.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Italian home-made pasta</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/6.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Chesse Cake Tart</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/7.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Traditional Pizza</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/8.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Italian home-made pasta</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/9.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Chesse Cake Tart</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/10.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Traditional Pizza</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/11.jpg" alt="" </a
+                >>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Italian home-made pasta</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/12.jpg" alt="" </a
+                >>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Chesse Cake Tart</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/7.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Traditional Pizza</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="200"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/8.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Italian home-made pasta</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="300"
+            >
+              <div class="recipes-list__item">
+                <a href="recipe-detail.html"
+                  ><img src="images/recipes/9.jpg" alt=""
+                /></a>
+                <div class="recipes-list__info-background">
+                  <div class="recipes-list__info">
+                    <h3>Chesse Cake Tart</h3>
+                    <div class="recipes-list__rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipes-list__pagination">
+            <span>01</span>
+            <a href="#">02</a>
+            <a href="#">03</a>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section end -->
     </main>
 
     <!-- Footer start -->
     <footer>
-        <section class="app-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="app-footer__logo-wrapper">
-                            <img src="images/logo.webp" alt="">
-                        </div>
+      <section class="app-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="app-footer__logo-wrapper">
+                <img src="images/logo.webp" alt="" />
+              </div>
 
-                        <ul class="app-footer__social-list">
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="app-footer__right">
-                            <ul class="app-footer__menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">Recipes</a></li>
-                                <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                            <p>Copyright © 2020 All rights reserved | This template is made with <i
-                                    class="far fa-heart"></i> by <a href="#">Colorlib</a> | Power by Minh Hung Le
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <ul class="app-footer__social-list">
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
+
+            <div class="col-lg-6">
+              <div class="app-footer__right">
+                <ul class="app-footer__menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="#">Recipes</a></li>
+                  <!-- <li><a href="recipe-detail.html">Recipe Detail</a></li> -->
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>
+                  Copyright © 2020 All rights reserved | This template is made
+                  with <i class="far fa-heart"></i> by
+                  <a href="#">Colorlib</a> |
+                  <a
+                    href="https://github.com/minhhungle-ag"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Power by Minh Hung Le</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
     <!-- Footer end -->
 
     <!-- Scroll-to-top button start -->
     <div class="scroll-to-top">
-        <button id="scrollButton">
-            <i class="fas fa-chevron-up"></i>
-        </button>
+      <button id="scrollButton">
+        <i class="fas fa-chevron-up"></i>
+      </button>
     </div>
     <!-- Scroll-to-top button end -->
 
@@ -501,12 +648,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            easing: 'ease-in-out',
-            duration: 600,
-            once: true
-        });
+      AOS.init({
+        easing: "ease-in-out",
+        duration: 600,
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,348 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Detail - Food Blog</title>
 
     <!-- Primary Meta Tags -->
     <title>Recipe Detail - Food Blog | Minh Hung Le</title>
-    <meta name="title" content="Recipe Detail - Food Blog | Minh Hung Le">
-    <meta name="description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
+    <meta name="title" content="Recipe Detail - Food Blog | Minh Hung Le" />
+    <meta
+      name="description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://food-blog-do-an.vercel.app/recipe-detail.html">
-    <meta property="og:title" content="Recipe Detail - Food Blog | Minh Hung Le">
-    <meta property="og:description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
-    <meta property="og:image" content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://food-blog-do-an.vercel.app/recipe-detail.html"
+    />
+    <meta
+      property="og:title"
+      content="Recipe Detail - Food Blog | Minh Hung Le"
+    />
+    <meta
+      property="og:description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
+    <meta
+      property="og:image"
+      content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://food-blog-do-an.vercel.app/recipe-detail.html">
-    <meta property="twitter:title" content="Recipe Detail - Food Blog | Minh Hung Le">
-    <meta property="twitter:description"
-        content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes.">
-    <meta property="twitter:image" content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://food-blog-do-an.vercel.app/recipe-detail.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Recipe Detail - Food Blog | Minh Hung Le"
+    />
+    <meta
+      property="twitter:description"
+      content="Food Blog is a place that specializes in providing recipes with premium dishes, satisfying customers' tastes and constantly updating new dishes."
+    />
+    <meta
+      property="twitter:image"
+      content="https://food-blog-do-an.vercel.app/images/recipes/6.jpg"
+    />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/c79a8ca9fc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c79a8ca9fc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- AOS Animate Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- CSS Stylesheets  -->
-    <link rel="stylesheet" href="css/grid/container.css">
-    <link rel="stylesheet" href="css/grid/row.css">
-    <link rel="stylesheet" href="css/grid/col.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/recipes.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/recipe-detail.css">
+    <link rel="stylesheet" href="css/grid/container.css" />
+    <link rel="stylesheet" href="css/grid/row.css" />
+    <link rel="stylesheet" href="css/grid/col.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/recipes.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/recipe-detail.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Header section start -->
     <header>
-        <!-- Top-bar section start -->
-        <section class="top-bar" id="topBarId">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="top-bar__social-list">
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="top-bar__links">
-                            <a href="#">Register</a>
-                            <span>/</span>
-                            <a href="#">Login</a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Top-bar section start -->
+      <section class="top-bar" id="topBarId">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="top-bar__social-list">
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
-        <!-- Top-bar section end -->
-
-        <!-- Navigation section start -->
-        <nav class="top-nav" id="navBarId">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 col-md-2 col-lg-2">
-                        <a href="index.html" class="top-nav___link-logo">
-                            <img class="top-nav__logo" src="./images/logo.webp" alt="">
-                        </a>
-                    </div>
-
-                    <div class="col-md-9 col-lg-8 ">
-                        <ul class="top-nav__menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="recipes.html">Recipes</a></li>
-                            <!-- <li class="active"><a href="#">Recipe Detail</a></li> -->
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-2 col-md-1 col-lg-2">
-                        <div class="top-nav__search">
-                            <button>
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="top-nav__toggle" id="showMenu">
-                            <div class="top-nav__toggle-bars">
-                                <div class="top-nav__toggle-bar" id="barTop"></div>
-                                <div class="top-nav__toggle-bar" id="hideBar"></div>
-                                <div class="top-nav__toggle-bar" id="barBottom"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <ul class="top-nav__menu-toggle" id="navLinks">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="recipes.html">Recipes</a></li>
-                        <!-- <li ><a href="recipe-detail.html">Recipe Detail</a></li> -->
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+              <div class="top-bar__links">
+                <a href="#">Register</a>
+                <span>/</span>
+                <a href="#">Login</a>
+              </div>
             </div>
-        </nav>
-        <!-- Navigation section end -->
+          </div>
+        </div>
+      </section>
+      <!-- Top-bar section end -->
+
+      <!-- Navigation section start -->
+      <nav class="top-nav" id="navBarId">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-md-2 col-lg-2">
+              <a href="index.html" class="top-nav___link-logo">
+                <img class="top-nav__logo" src="./images/logo.webp" alt="" />
+              </a>
+            </div>
+
+            <div class="col-md-9 col-lg-8">
+              <ul class="top-nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="recipes.html">Recipes</a></li>
+                <!-- <li class="active"><a href="#">Recipe Detail</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-2 col-md-1 col-lg-2">
+              <div class="top-nav__search">
+                <button>
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="top-nav__toggle" id="showMenu">
+                <div class="top-nav__toggle-bars">
+                  <div class="top-nav__toggle-bar" id="barTop"></div>
+                  <div class="top-nav__toggle-bar" id="hideBar"></div>
+                  <div class="top-nav__toggle-bar" id="barBottom"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="top-nav__menu-toggle" id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="recipes.html">Recipes</a></li>
+              <!-- <li ><a href="recipe-detail.html">Recipe Detail</a></li> -->
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation section end -->
     </header>
 
     <main>
-        <!-- Hero section start -->
-        <section class="hero"></section>
-        <!-- Hero section end -->
+      <!-- Hero section start -->
+      <section class="hero"></section>
+      <!-- Hero section end -->
 
-        <!-- Recipe-detail section start -->
-        <section class="recipe-detail" style="overflow-x: hidden;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="recipe-detail__header" data-aos="fade-up" data-aos-easing="ease-in-out"
-                            data-aos-delay="0">
-                            <h1 class="recipe-detail__heading">Lamb Chops with green peper sauce</h1>
-                            <p class="recipe-detail__date">May 15, 2018</p>
-                            <ul class="recipe-detail__rating">
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-lg-5" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="200">
-                        <div class="recipe-detail__box">
-                            <div class="recipe-detail__summary">
-                                <p>Prep: 15 mins</p>
-                                <p>Cook: 30 mins</p>
-                                <p>Yields: 8 Servings</p>
-                            </div>
-                            <h2 class="recipe-detail__title">Ingredients</h2>
-                            <form class="recipe-detail__check-box">
-                                <ul class="recipe-detail__check-box-list">
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-1">
-                                            <label for="box-1" class="square">4 Tbsp (57 gr) butter</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-2">
-                                            <label for="box-2" class="square">2 large eggs</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-3">
-                                            <label for="box-3" class="square">2 yogurt containers granulated
-                                                sugar</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-4">
-                                            <label for="box-4" class="square">1 vanilla or plain yogurt, 170g
-                                                container</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-5">
-                                            <label for="box-5" class="square">White flour</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-6">
-                                            <label for="box-6" class="square">1.5 yogurt containers milk</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-7">
-                                            <label for="box-7" class="square">1/4 tsp cinnamon</label>
-                                        </div>
-                                    </li>
-
-                                    <li class="recipe-detail__check-box-item">
-                                        <div class="form-group">
-                                            <input type="checkbox" name="checkbox" id="box-8">
-                                            <label for="box-8" class="square">1 cup fresh blueberries </label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-7">
-                        <ul class="recipe-detail__content">
-                            <li data-aos="fade-left" data-aos-easing="linear" data-aos-delay="200">
-                                <div class="recipe-detail__item">
-                                    <h2 class="recipe-detail__number">01.</h2>
-                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
-                                        pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
-                                        Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
-                                        penatibus et magni.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li data-aos="fade-left" data-aos-easing="linear" data-aos-delay="300">
-                                <div class="recipe-detail__item">
-                                    <h2 class="recipe-detail__number">02.</h2>
-                                    <p class="recipe-detail__description">Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Enim consectetur commodi blanditiis iure expedita nisi illo
-                                        error inventore, voluptatem fugiat iste molestiae facere voluptatibus laborum
-                                        officia quisquam odit laboriosam libero?
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li data-aos="fade-left" data-aos-easing="linear" data-aos-delay="400">
-                                <div class="recipe-detail__item">
-                                    <h2 class="recipe-detail__number">03.</h2>
-                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Commodi accusamus dolore, et blanditiis sapiente aspernatur
-                                        cupiditate ratione est vitae unde..
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500">
-                                <div class="recipe-detail__item">
-                                    <h2 class="recipe-detail__number">04.</h2>
-                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Repellat officia dolorum ducimus molestiae saepe tenetur
-                                        dolorem esse earum veritatis nam
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li data-aos="fade-left" data-aos-easing="linear" data-aos-delay="600">
-                                <div class="recipe-detail__item">
-                                    <h2 class="recipe-detail__number">05.</h2>
-                                    <p class="recipe-detail__description">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
-                                        pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
-                                        Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque
-                                        penatibus et magni.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- Recipe-detail section start -->
+      <section class="recipe-detail" style="overflow-x: hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div
+                class="recipe-detail__header"
+                data-aos="fade-up"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="0"
+              >
+                <h1 class="recipe-detail__heading">
+                  Lamb Chops with green peper sauce
+                </h1>
+                <p class="recipe-detail__date">May 15, 2018</p>
+                <ul class="recipe-detail__rating">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- Recipe-detail section end -->
+          </div>
 
+          <div class="row">
+            <div
+              class="col-12 col-lg-5"
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-delay="200"
+            >
+              <div class="recipe-detail__box">
+                <div class="recipe-detail__summary">
+                  <p>Prep: 15 mins</p>
+                  <p>Cook: 30 mins</p>
+                  <p>Yields: 8 Servings</p>
+                </div>
+                <h2 class="recipe-detail__title">Ingredients</h2>
+                <form class="recipe-detail__check-box">
+                  <ul class="recipe-detail__check-box-list">
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-1" />
+                        <label for="box-1" class="square"
+                          >4 Tbsp (57 gr) butter</label
+                        >
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-2" />
+                        <label for="box-2" class="square">2 large eggs</label>
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-3" />
+                        <label for="box-3" class="square"
+                          >2 yogurt containers granulated sugar</label
+                        >
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-4" />
+                        <label for="box-4" class="square"
+                          >1 vanilla or plain yogurt, 170g container</label
+                        >
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-5" />
+                        <label for="box-5" class="square">White flour</label>
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-6" />
+                        <label for="box-6" class="square"
+                          >1.5 yogurt containers milk</label
+                        >
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-7" />
+                        <label for="box-7" class="square"
+                          >1/4 tsp cinnamon</label
+                        >
+                      </div>
+                    </li>
+
+                    <li class="recipe-detail__check-box-item">
+                      <div class="form-group">
+                        <input type="checkbox" name="checkbox" id="box-8" />
+                        <label for="box-8" class="square"
+                          >1 cup fresh blueberries
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <ul class="recipe-detail__content">
+                <li
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-delay="200"
+                >
+                  <div class="recipe-detail__item">
+                    <h2 class="recipe-detail__number">01.</h2>
+                    <p class="recipe-detail__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vestibulum nec varius dui. Suspendisse potenti. Vestibulum
+                      ac pellentesque tortor. Aenean congue sed metus in
+                      iaculis. Cras a tortor enim. Phasellus posuere vestibulum
+                      ipsum, eget lobortis purus. Orci varius natoque penatibus
+                      et magni.
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-delay="300"
+                >
+                  <div class="recipe-detail__item">
+                    <h2 class="recipe-detail__number">02.</h2>
+                    <p class="recipe-detail__description">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Enim consectetur commodi blanditiis iure expedita nisi
+                      illo error inventore, voluptatem fugiat iste molestiae
+                      facere voluptatibus laborum officia quisquam odit
+                      laboriosam libero?
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-delay="400"
+                >
+                  <div class="recipe-detail__item">
+                    <h2 class="recipe-detail__number">03.</h2>
+                    <p class="recipe-detail__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Commodi accusamus dolore, et blanditiis sapiente
+                      aspernatur cupiditate ratione est vitae unde..
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-delay="500"
+                >
+                  <div class="recipe-detail__item">
+                    <h2 class="recipe-detail__number">04.</h2>
+                    <p class="recipe-detail__description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat officia dolorum ducimus molestiae saepe tenetur
+                      dolorem esse earum veritatis nam
+                    </p>
+                  </div>
+                </li>
+
+                <li
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-delay="600"
+                >
+                  <div class="recipe-detail__item">
+                    <h2 class="recipe-detail__number">05.</h2>
+                    <p class="recipe-detail__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vestibulum nec varius dui. Suspendisse potenti. Vestibulum
+                      ac pellentesque tortor. Aenean congue sed metus in
+                      iaculis. Cras a tortor enim. Phasellus posuere vestibulum
+                      ipsum, eget lobortis purus. Orci varius natoque penatibus
+                      et magni.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Recipe-detail section end -->
     </main>
 
     <!-- Footer start -->
     <footer>
-        <section class="app-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="app-footer__logo-wrapper">
-                            <img src="images/logo.webp" alt="">
-                        </div>
-                        <ul class="app-footer__social-list">
-                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="app-footer__right">
-                            <ul class="app-footer__menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="recipes.html">Recipes</a></li>
-                                <!-- <li class="active"><a href="recipe-detail.html">Recipe Detail</a></li> -->
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                            <p>Copyright © 2020 All rights reserved | This template is made with <i
-                                    class="far fa-heart"></i> by <a href="#">Colorlib</a> | Power by Minh Hung Le
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <section class="app-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="app-footer__logo-wrapper">
+                <img src="images/logo.webp" alt="" />
+              </div>
+              <ul class="app-footer__social-list">
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
             </div>
-        </section>
+
+            <div class="col-lg-6">
+              <div class="app-footer__right">
+                <ul class="app-footer__menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a href="recipes.html">Recipes</a></li>
+                  <!-- <li class="active"><a href="recipe-detail.html">Recipe Detail</a></li> -->
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>
+                  Copyright © 2020 All rights reserved | This template is made
+                  with <i class="far fa-heart"></i> by
+                  <a href="#">Colorlib</a> |
+                  <a
+                    href="https://github.com/minhhungle-ag"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Power by Minh Hung Le</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
     <!-- Footer end -->
 
     <!-- Scroll-to-top button start -->
     <div class="scroll-to-top">
-        <button id="scrollButton">
-            <i class="fas fa-chevron-up"></i>
-        </button>
+      <button id="scrollButton">
+        <i class="fas fa-chevron-up"></i>
+      </button>
     </div>
     <!-- Scroll-to-top button end -->
 
@@ -351,12 +457,11 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            easing: 'ease-in-out',
-            duration: 600,
-            once: true
-        });
+      AOS.init({
+        easing: "ease-in-out",
+        duration: 600,
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
